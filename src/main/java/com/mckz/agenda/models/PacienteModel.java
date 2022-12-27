@@ -1,9 +1,9 @@
 package com.mckz.agenda.models;
 
-import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.UUID;
 
@@ -17,15 +17,15 @@ public class PacienteModel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-    @Column(length = 255, nullable = false)
+    @Column(nullable = false)
     private String nome;
 
-    @Column(length = 255, nullable = false)
+    @Column(nullable = false)
     private String sobrenome;
 
-    @Column(length = 255)
+    @Column(nullable = false)
     private String cpf;
 
-    @Column(length = 255, nullable = false)
+    @Column(nullable = false)
     private String email;
 }

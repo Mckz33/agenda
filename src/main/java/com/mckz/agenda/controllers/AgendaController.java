@@ -3,13 +3,13 @@ package com.mckz.agenda.controllers;
 import com.mckz.agenda.dtos.AgendaDto;
 import com.mckz.agenda.models.AgendaModel;
 import com.mckz.agenda.services.AgendaService;
-import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.List;
